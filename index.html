@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POGA FARM | Pure Organic Milk, Eggs & Heritage Meat</title>
+  <meta name="description" content="Poga Farm produces high-quality organic liquid egg products, raw milk, and pasture-raised meats with rotating product backgrounds. Inspired by b-egg.farm aesthetics.">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. Interactive Preloader
+       ========================================================================= -->
+  <div id="loader-screen" class="loader-screen">
+    <div class="loader-top">
+      <div class="loader-logo">poga farm</div>
+      <div class="mono-tag">Est. 2018 • Organic Certified</div>
+    </div>
+    
+    <div class="loader-middle">
+      <div id="loader-number" class="loader-number">0</div>
+      <div class="loader-unit">%</div>
+    </div>
+    
+    <div class="loader-bottom">
+      <div class="loader-bar-bg">
+        <div id="loader-bar-fill" class="loader-bar-fill"></div>
+      </div>
+      <div class="loader-sub">loading fresh farm experience...</div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       2. Navigation Bar
+       ========================================================================= -->
+  <header id="navbar" class="navbar navbar-transparent">
+    <a href="#home" class="nav-brand">
+      <span class="nav-brand-logo">poga farm</span>
+    </a>
+    
+    <ul id="nav-menu" class="nav-menu">
+      <li><a href="#home" class="nav-link active">HOME</a></li>
+      <li><a href="#about" class="nav-link">ABOUT</a></li>
+      <li><a href="#products" class="nav-link">PRODUCTS</a></li>
+      <li><a href="#energy" class="nav-link">ENERGY VALUE</a></li>
+      <li><a href="#specs" class="nav-link">SPECS</a></li>
+      <li><a href="#recipes" class="nav-link">RECIPES</a></li>
+      <li><a href="#contact" class="nav-link">CONTACT</a></li>
+    </ul>
+    
+    <div class="nav-actions">
+      <a href="tel:+15553712437" class="nav-phone">+1 555 3712 437</a>
+      <a href="#contact" class="btn-pill btn-pill-gold">order fresh</a>
+      <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay Menu -->
+  <div id="mobile-drawer" class="mobile-drawer">
+    <div class="drawer-header">
+      <div class="drawer-logo">poga farm</div>
+      <button id="mobile-close" class="drawer-close" aria-label="Close Menu">&times;</button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="#home" class="drawer-link">HOME</a></li>
+      <li><a href="#about" class="drawer-link">ABOUT</a></li>
+      <li><a href="#products" class="drawer-link">PRODUCTS</a></li>
+      <li><a href="#energy" class="drawer-link">ENERGY VALUE</a></li>
+      <li><a href="#specs" class="drawer-link">STORAGE & SPECS</a></li>
+      <li><a href="#recipes" class="drawer-link">RECIPES</a></li>
+      <li><a href="#contact" class="drawer-link">CONTACT</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <div class="mono-tag">hello@pogafarm.com</div>
+      <div style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.2rem;">+1 555 3712 437</div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       3. HOME Section with 15-Second Auto-Rotating Product Backgrounds
+       ========================================================================= -->
+  <section id="home" class="hero-carousel-section">
+    
+    <!-- Rotating Product Background Slides (15s Interval) -->
+    <div class="hero-bg-carousel">
+      <div class="hero-slide active" style="background-image: url('images/hero.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('images/milk.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('images/eggs.jpg');"></div>
+      <div class="hero-slide-overlay"></div>
+    </div>
+
+    <div class="hero-container hero-carousel-content">
+      
+      <!-- Big Bold b-egg.farm Style Titles -->
+      <div class="hero-title-group">
+        <h1 class="hero-main-title light">a new look</h1>
+        <h1 class="hero-main-title light">at a familiar</h1>
+        <h1 class="hero-main-title highlight-text">product</h1>
+      </div>
+
+    
+      <!-- Hero Subtext & Actions -->
+      <div class="hero-footer-row">
+        <div class="hero-actions">
+          <a href="#products" class="btn-pill btn-pill-gold">explore products</a>
+          <a href="#about" class="btn-pill btn-outline-light">learn about us</a>
+        </div>
+      </div>
+
+      <!-- Carousel Slide Indicators (Auto rotates every 15s) -->
+      <div class="carousel-indicators">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. SEPARATE ABOUT SECTION (Dedicated Story & Organic Commitment)
+       ========================================================================= -->
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <div class="about-header">
+        <span class="mono-tag">Who We Are</span>
+        <h2 class="section-heading-lg">about poga farm</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-img-box">
+          <img src="images/hero.jpg" alt="Poga Farm Pastures & Livestock">
+          <div class="about-badge-callout">
+            <div style="font-family: var(--font-display); font-size: 2.5rem; color: var(--accent-gold); line-height: 1;">100%</div>
+            <div style="font-family: var(--font-mono); font-size: 0.8rem; text-transform: uppercase;">Pasture-Raised Organic</div>
+          </div>
+        </div>
+
+        <div class="about-text-content">
+          <h3>Purity from pasture to your family table</h3>
+          <p>
+            Founded in 2018, <strong>Poga Farm</strong> was created with a single mission: to revolutionize fresh agricultural produce by combining traditional pasture farming with modern, hygienic, eco-certified liquid and dairy processing.
+          </p>
+          <p>
+            Our pastured hens and Jersey cows roam freely over 100+ acres of organic clover fields. We never use routine antibiotics, synthetic growth hormones, or chemical additives.
+          </p>
+
+          <div class="about-highlights-list">
+            <div class="about-item">
+              <span class="item-icon">✓</span>
+              <div>
+                <strong>Natural Plant Fodder Feed</strong>
+                <p>100% Non-GMO organic fodder harvested from our own farm fields.</p>
+              </div>
+            </div>
+            <div class="about-item">
+              <span class="item-icon">✓</span>
+              <div>
+                <strong>Certified Laboratory Standards</strong>
+                <p>Daily microbiological batch inspections for complete peace of mind.</p>
+              </div>
+            </div>
+            <div class="about-item">
+              <span class="item-icon">✓</span>
+              <div>
+                <strong>Biological Eco Packaging</strong>
+                <p>Recyclable glass bottles & compact cartons that save fridge space.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. Marquee Infinite Ticker Banner
+       ========================================================================= -->
+  <div class="marquee-container">
+    <div class="marquee-track">
+      <div class="marquee-item"><span>POGA FARM</span> <span class="marquee-star">★</span></div>
+      <div class="marquee-item"><span>LIQUID EGG PRODUCTS</span> <span class="marquee-star">★</span></div>
+      <div class="marquee-item"><span>PURE ORGANIC MILK</span> <span class="marquee-star">★</span></div>
+      <div class="marquee-item"><span>HERITAGE MEATS</span> <span class="marquee-star">★</span></div>
+      <div class="marquee-item"><span>WITHOUT ANTIBIOTICS</span> <span class="marquee-star">★</span></div>
+      <div class="marquee-item"><span>BIOLOGICAL PACKAGING</span> <span class="marquee-star">★</span></div>
+      <!-- Repeat for seamless scroll -->
+      <div class="marquee-item"><span>POGA FARM</span> <span class="marquee-star">★</span></div>
+      <div class="marquee-item"><span>LIQUID EGG PRODUCTS</span> <span class="marquee-star">★</span></div>
+      <div class="marquee-item"><span>PURE ORGANIC MILK</span> <span class="marquee-star">★</span></div>
+      <div class="marquee-item"><span>HERITAGE MEATS</span> <span class="marquee-star">★</span></div>
+      <div class="marquee-item"><span>WITHOUT ANTIBIOTICS</span> <span class="marquee-star">★</span></div>
+      <div class="marquee-item"><span>BIOLOGICAL PACKAGING</span> <span class="marquee-star">★</span></div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       6. Energy Value Section (Matching b-egg.farm layout)
+       ========================================================================= -->
+  <section id="energy" class="energy-section">
+    <div class="energy-container">
+      <span class="mono-tag" style="color: var(--accent-gold);">Nutritional Profile</span>
+      <h2 class="section-heading-lg">Energy value</h2>
+      
+      <div class="energy-stats-row">
+        <div class="energy-stat-card">
+          <span class="stat-title">FAT</span>
+          <span class="stat-divider">—</span>
+          <span class="stat-value" id="energy-fat">10.2 G</span>
+        </div>
+        <div class="energy-stat-card">
+          <span class="stat-title">CARBOHYDRATES</span>
+          <span class="stat-divider">—</span>
+          <span class="stat-value" id="energy-carbs">1.1 G</span>
+        </div>
+        <div class="energy-stat-card">
+          <span class="stat-title">PROTEINS</span>
+          <span class="stat-divider">—</span>
+          <span class="stat-value" id="energy-protein">12.5 G</span>
+        </div>
+      </div>
+
+      <!-- Minerals Pill Cloud (Matching b-egg.farm exactly) -->
+      <div class="minerals-cloud-box">
+        <div class="mono-tag" style="margin-bottom: 1rem;">Essential Nutrients & Minerals:</div>
+        <div class="minerals-cloud">
+          <span class="min-tag">sulfur</span>
+          <span class="min-tag">copper</span>
+          <span class="min-tag">potassium</span>
+          <span class="min-tag">calcium</span>
+          <span class="min-tag">selenium</span>
+          <span class="min-tag">iron</span>
+          <span class="min-tag">magnesium</span>
+          <span class="min-tag">manganese</span>
+          <span class="min-tag">zinc</span>
+          <span class="min-tag">choline</span>
+          <span class="min-tag">iodine</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. Main Products Showcase (Milk, Eggs, Meat)
+       ========================================================================= -->
+  <section id="products" class="products-section">
+    <div class="products-header">
+      <div>
+        <span class="mono-tag">Poga Farm Products</span>
+        <h2 class="section-heading-lg">the best of<br>the best</h2>
+      </div>
+      
+      <div class="category-tabs">
+        <button class="tab-btn active" data-category="eggs">Organic Eggs</button>
+        <button class="tab-btn" data-category="milk">Pure Milk</button>
+        <button class="tab-btn" data-category="meat">Heritage Meat</button>
+      </div>
+    </div>
+
+    <!-- Active Product Card -->
+    <div id="product-card" class="product-card-container">
+      <div class="product-card-img">
+        <img id="product-img" src="images/eggs.jpg" alt="Poga Farm Pasture Eggs">
+        <div id="product-tag" class="product-badge-overlay">Liquid egg products</div>
+      </div>
+      
+      <div class="product-card-info">
+        <h3 id="product-title" class="product-card-title">pasture-raised organic eggs</h3>
+        <p id="product-desc" class="product-card-desc">
+          Liquid egg products are a ready-to-use ingredient that minimizes your time in the kitchen. Produced in state-of-the-art facilities with strict zero antibiotic standards.
+        </p>
+
+        <div class="product-specs-list">
+          <div class="spec-row">
+            <span class="spec-lbl">Category:</span>
+            <span id="spec-cat" class="spec-val">Whole Egg, Whites & Yolks</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-lbl">Volume:</span>
+            <span id="spec-vol" class="spec-val">9 egg / 500 ml</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-lbl">Packaging:</span>
+            <span id="spec-pack" class="spec-val">Biological Ecological Carton</span>
+          </div>
+        </div>
+
+        <div class="product-cta-row">
+          <a href="#contact" class="btn-pill btn-pill-gold">inquire order</a>
+          <a href="#specs" class="btn-pill btn-outline">view shelf specs</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. 4 Quality Pillars (Matching b-egg.farm Quality Section)
+       ========================================================================= -->
+  <section class="quality-pillars-section">
+    <div class="quality-pillars-grid">
+      
+      <div class="pillar-card">
+        <div class="pillar-num">01</div>
+        <h3>Plant fodder</h3>
+        <p>Our livestock and poultry are fed 100% natural, non-GMO plant fodder cultivated directly on certified organic pastures.</p>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-num">02</div>
+        <h3>Certified laboratory</h3>
+        <p>State-of-the-art daily testing guarantees microbiological purity, strict cold chain control, and zero contamination.</p>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-num">03</div>
+        <h3>Without antibiotics</h3>
+        <p>100% free from growth hormones, synthetic stimulants, or routine antibiotics. Pure natural nutrition for your family.</p>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-num">04</div>
+        <h3>Biological packaging</h3>
+        <p>Convenient eco packaging protects freshness while minimizing space in your refrigerator and reducing plastic waste.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       9. 3 Product Spec Features (easy, compact, quality)
+       ========================================================================= -->
+  <section id="specs" class="specs-features-section">
+    <div class="specs-features-grid">
+      
+      <!-- Feature 1: Easy -->
+      <div class="feature-card">
+        <div class="feature-header">
+          <h3>easy</h3>
+          <span class="feature-tag">9 egg / 500 ml</span>
+        </div>
+        <p>Liquid egg products and ready dairy are ready-to-use ingredients that minimize your time spent preparing meals in the kitchen.</p>
+      </div>
+
+      <!-- Feature 2: Compact -->
+      <div class="feature-card">
+        <div class="feature-header">
+          <h3>compact</h3>
+          <span class="feature-tag">150–325 mm</span>
+        </div>
+        <p>Convenient ecological packaging will take up significantly less space in your refrigerator than traditional egg cartons or bulky jugs.</p>
+      </div>
+
+      <!-- Feature 3: Quality -->
+      <div class="feature-card">
+        <div class="feature-header">
+          <h3>quality</h3>
+          <span class="feature-tag">No hormones</span>
+        </div>
+        <p>In the package, you will find the same high quality and delicious Poga Farm products, meeting international food safety standards.</p>
+      </div>
+
+    </div>
+
+    <!-- Shelf Life & Barcode Box (Matching b-egg.farm barcode design) -->
+    <div class="barcode-specs-box">
+      <div class="barcode-col">
+        <div class="mono-tag">BAR CODE OF PACKAGING</div>
+        <div class="barcode-val">4820 1316 6088</div>
+        <div class="barcode-lines">||||| | |||||| ||| ||||| ||</div>
+        
+        <div class="mono-tag" style="margin-top: 1.5rem;">BARCODE BOX</div>
+        <div class="barcode-val">4820 1316 6094</div>
+      </div>
+
+      <div class="storage-col">
+        <div class="mono-tag" style="color: var(--accent-gold);">SHELF LIFE AND STORAGE CONDITIONS</div>
+        <ul class="storage-list">
+          <li><strong>30 days</strong> at a temperature of (4 ± 2) °C</li>
+          <li>After opening, store in the original package with a tightly closed lid for no more than 2 days at 0°C to 4°C.</li>
+          <li>Shake well before use.</li>
+          <li>Batch number and date "Use by" are indicated clearly on the package.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       10. Recipe Showcase Section ("to your liking there")
+       ========================================================================= -->
+  <section id="recipes" class="recipe-showcase-section">
+    <div class="recipe-box">
+      <div class="recipe-text-col">
+        <span class="mono-tag">Farm-Fresh Cooking</span>
+        <h2 class="section-heading-lg">to your liking there.</h2>
+        <p>
+          Explore delicious, quick, and nutritious recipes made with Poga Farm liquid eggs, organic milk, and pasture meats.
+        </p>
+        <button id="open-recipe-modal" class="btn-pill btn-pill-gold">check recipes</button>
+      </div>
+      <div class="recipe-img-col">
+        <img src="images/recipe.jpg" alt="Poga Farm Recipe Spread">
+      </div>
+    </div>
+  </section>
+
+  <!-- Recipe Interactive Modal Overlay -->
+  <div id="recipe-modal" class="modal-overlay">
+    <div class="modal-box">
+      <button id="close-recipe-modal" class="modal-close">&times;</button>
+      <span class="mono-tag">Farmhouse Recipe</span>
+      <h3 style="margin: 0.5rem 0 1rem; color: var(--bg-dark); font-size: 2.2rem;">Country Omelet & Ribeye</h3>
+      <p style="margin-bottom: 1.5rem;">Quick 10-minute breakfast using Poga Farm liquid eggs, raw milk, and grass-fed ribeye steak.</p>
+      
+      <div class="recipe-ingredients">
+        <h4 style="font-family: var(--font-mono); font-size: 0.9rem; color: var(--accent-gold);">INGREDIENTS:</h4>
+        <ul style="margin-top: 0.5rem; line-height: 1.8; padding-left: 1.2rem; font-size: 0.95rem;">
+          <li>150ml Poga Farm Liquid Eggs</li>
+          <li>30ml Poga Farm Fresh Milk</li>
+          <li>150g Poga Farm Grass-fed Ribeye Steak</li>
+          <li>Fresh herbs (Thyme, Rosemary, Chives)</li>
+          <li>Poga Farmstead Butter & Sea Salt</li>
+        </ul>
+      </div>
+
+      <div style="margin-top: 2rem;">
+        <a href="#contact" class="btn-pill btn-pill-gold" id="modal-order-btn">order fresh ingredients</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       11. Newsletter Form Section ("Don't miss new items")
+       ========================================================================= -->
+  <section id="contact" class="newsletter-section">
+    <div class="newsletter-card">
+      <h1 class="newsletter-title">Don't miss</h1>
+      <h1 class="newsletter-title highlight-text">new items</h1>
+      <p style="color: rgba(251,249,241,0.8); margin: 1.5rem auto 0; max-width: 500px;">
+        Subscribe to receive weekly fresh delivery updates and wholesale price lists.
+      </p>
+
+      <form id="order-form" class="newsletter-form">
+        <input type="email" placeholder="Enter your email address..." required>
+        <button type="submit" class="btn-pill btn-pill-gold">submit</button>
+      </form>
+      
+      <div id="success-msg" class="success-message">
+        Thank you! Your submission has been received.
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       12. Footer
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="footer-container">
+      
+      <div class="footer-col brand-col">
+        <h3 class="footer-logo">poga farm</h3>
+        <p class="footer-tagline">
+          High-Quality Liquid Egg Products, Organic Milk & Heritage Meat.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">WHO WE ARE</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Poga Farm</a></li>
+          <li><a href="#energy">Energy Value</a></li>
+          <li><a href="#specs">Storage Conditions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">PRODUCTS</h4>
+        <ul class="footer-links">
+          <li><a href="#products">Liquid Whole Egg</a></li>
+          <li><a href="#products">Liquid Egg Whites</a></li>
+          <li><a href="#products">Pure Organic Milk</a></li>
+          <li><a href="#products">Grass-Fed Beef</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">CONTACT</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:hello@pogafarm.com">hello@pogafarm.com</a></li>
+          <li><a href="tel:+15553712437">+1 555 3712 437</a></li>
+          <li style="color: rgba(251,249,241,0.5); font-size: 0.8rem; margin-top: 0.4rem;">
+            3517 W. Gray St. Utica, PA 57867
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div>© 2026 Poga Farm. Inspired by b-egg.farm</div>
+      <div>Made with organic care</div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
